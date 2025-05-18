@@ -2532,7 +2532,7 @@ body {
   font-size: 1.125em; }
 /* line 27, sass/pages/_post.scss */
 .content p {
-  margin: 0 0 40px; }
+  margin: 0 0 15px; }
 
 /* line 1, sass/pages/_gallery.scss */
 .content.fullwidth {
