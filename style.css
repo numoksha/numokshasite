@@ -266,6 +266,13 @@ body {
   font-size: 16px;
   line-height: 24px; }
 
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 /* line 9, sass/libs/_global.scss */
 #site-content {
   overflow: hidden; }
