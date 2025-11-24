@@ -2265,7 +2265,15 @@ body {
       -webkit-transition: .3s ease;
               transition: .3s ease;
       -webkit-transition-delay: .3s;
-              transition-delay: .3s; }
+              transition-delay: .3s; 
+            @media (max-width: 600px) {
+              font-size: 36px;
+              font-size: 5em;
+              -webkit-transform: scale(1);
+                  -ms-transform: scale(1);
+                      transform: scale(1);
+            }
+            }
     /* line 36, sass/pages/_homepage.scss */
     .slider .slides .slide-subtitle {
       color: #fd5927;
