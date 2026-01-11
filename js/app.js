@@ -63,6 +63,27 @@
 		            queue: false
 		        }
 		    });
+
+		    // If a filter link is already marked as current (for example
+		    // in the server-rendered HTML), apply that filter on load so
+		    // the page actually shows the expected items (e.g. ".band").
+		    var initialFilter = $('.filterable-nav a.current').attr('data-filter') || $('.mobile-filter').val();
+		    if( initialFilter ){
+		        // Apply only if it's not the wildcard or to respect current state
+		        $container.isotope({
+		            filter: initialFilter,
+		            animationOptions: {
+		                duration: 750,
+		                easing: 'linear',
+		                queue: false
+		            }
+		        });
+
+		        // Make sure the mobile select reflects the same filter
+		        if( $('.mobile-filter').length ){
+		            $('.mobile-filter').val(initialFilter);
+		        }
+		    }
 		});
 		$('.filterable-nav a').click(function(e){
 	    	e.preventDefault();
