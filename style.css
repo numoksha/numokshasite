@@ -1859,6 +1859,10 @@ body {
       text-decoration: none;
       -webkit-transition: .3s ease;
               transition: .3s ease; }
+      @media screen and (min-width: 641px) and (max-width: 720px) {
+        .main-navigation .menu a {
+          padding-left: 12px;
+          padding-right: 12px; } }
       /* line 94, sass/layout/_header.scss */
       .main-navigation .menu a:after {
         content: "/";
@@ -2030,6 +2034,12 @@ body {
   /* line 130, sass/layout/_content.scss */
   .content .post p {
     margin-bottom: 10px; }
+  .content .post .excerpt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden; }
   /* line 131, sass/layout/_content.scss */
   .content .post a {
     color: #fd5927;
@@ -2369,6 +2379,11 @@ body {
       font-size: 1.5em;
       font-weight: 100;
       font-style: normal; }
+    .quote-slider blockquote a {
+      color: inherit;
+      text-decoration: none; }
+      .quote-slider blockquote a:hover {
+        color: #fd5927; }
   /* line 125, sass/pages/_homepage.scss */
   .quote-slider .flex-direction-nav {
     *zoom: 1;
@@ -2552,6 +2567,12 @@ body {
 /* line 27, sass/pages/_post.scss */
 .content p {
   margin: 0 0 15px; }
+.content a {
+  color: #fd5927;
+  text-decoration: none; }
+.content .review-nav {
+  clear: both;
+  padding-top: 10px; }
 
 /* line 1, sass/pages/_gallery.scss */
 .content.fullwidth {
