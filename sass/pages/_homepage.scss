@@ -120,6 +120,15 @@
 			font-weight: 100;
 			font-style: normal;
 		}
+
+		a{
+			color: inherit;
+			text-decoration: none;
+
+			&:hover{
+				color: $accent-color;
+			}
+		}
 	}
 
 	.flex-direction-nav{
